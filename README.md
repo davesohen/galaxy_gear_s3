@@ -39,7 +39,7 @@ Running instructions for my device
 ```
 "C:\tizen-studio\tools\ide\bin\tizen.bat" certificate --alias=tizen-nolische --name=tizen-nolische --email=sohendave@gmail.com --password=changeit
 
-"C:\tizen-studio\tools\ide\bin\tizen.bat" security-profiles add --active --name=tizen-nolische --author=%HOME%/tizen-sdk-data/keystore/author/author.p12 --password=changeit
+"C:\tizen-studio\tools\ide\bin\tizen.bat" security-profiles add --active --name=tizen-nolische --author="C:\tizen-studio-data.1\keystore\author/author.p12" --password=changeit
 
 
 sdb connect 192.168.0.46:26101
