@@ -37,12 +37,30 @@ Type the following in the prompt on Windows: s
 
 Running instructions for my device
 ```
+"C:\tizen-studio\tools\ide\bin\tizen.bat" certificate --alias=tizen-nolische --name=tizen-nolische --email=sohendave@gmail.com --password=changeit
+
+"C:\tizen-studio\tools\ide\bin\tizen.bat" security-profiles add --active --name=tizen-nolische --author=%HOME%/tizen-sdk-data/keystore/author/author.p12 --password=changeit
+
+
 sdb connect 192.168.0.46:26101
 
 sdb install "C:\development\gear\Tinzen Nolische Gear Workspace\GearWatchDesigner\workspace\NolischeWatchFace.tpk"
 
+
+sdb install "C:\Users\dave\GearWatchDesigner\workspace\NolischeWatchFace_TW3.tpk"
+
+
+
 sdb push "C:\development\gear\Tinzen Nolische Gear Workspace\GearWatchDesigner\workspace\NolischeWatchFace.tpk" /opt/usr/home/owner/apps_rw/tmp/nolische_watch_face.tpk
+
+sdb push "C:\development\gear\Tinzen Nolische Gear Workspace\GearWatchDesigner\workspace\nolische_watch_face.gwd" /opt/usr/home/owner/apps_rw/tmp/nolische_watch_face.gwd
 
 sdb shell
 pkgcmd -w -i -t tpk -p /opt/usr/home/owner/apps_rw/tmp/nolische_watch_face.tpk --global
+
+tizen package --sign "samsung-tizen-sohen" -- "C:\Users\dave\GearWatchDesigner\workspace\NolischeWatchFace_TW3.tpk"
+
+"C:\Users\dave\GearWatchDesigner\workspace\NolischeWatchFace_TW3.tpk"
+
+pkgcmd -w -i -t gwd -p /opt/usr/home/owner/apps_rw/tmp/nolische_watch_face.gwd --global
 ```
