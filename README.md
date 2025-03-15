@@ -44,5 +44,5 @@ sdb install "C:\development\gear\Tinzen Nolische Gear Workspace\GearWatchDesigne
 sdb push "C:\development\gear\Tinzen Nolische Gear Workspace\GearWatchDesigner\workspace\NolischeWatchFace.tpk" /opt/usr/home/owner/apps_rw/tmp/nolische_watch_face.tpk
 
 sdb shell
-pkgcmd --install-file /opt/usr/home/owner/apps_rw/tmp/nolische_watch_face.tpk --no-verify
+pkgcmd -w -i -t tpk -p /opt/usr/home/owner/apps_rw/tmp/nolische_watch_face.tpk --global
 ```
