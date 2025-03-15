@@ -29,3 +29,11 @@ Type the following in the prompt on Windows: s
   When you are done, please do not forget to kill the SDB server. Type the following in the prompt on Windows: sdb kill-server. On Ubuntu and macOS, type the following in the prompt: ./sdb kill-server.
   That is all. I hope this has been helpful to you all. If you need any help of have any questions, please reply on the thread.
 ```
+
+
+Running instructions for my device
+```
+sdb connect 192.168.0.46:26101
+
+sdb install "C:\development\gear\Tinzen Nolische Gear Workspace\GearWatchDesigner\workspace\NolischeWatchFace.tpk"
+```
