@@ -41,5 +41,8 @@ sdb connect 192.168.0.46:26101
 
 sdb install "C:\development\gear\Tinzen Nolische Gear Workspace\GearWatchDesigner\workspace\NolischeWatchFace.tpk"
 
-sdb push "C:\development\gear\Tinzen Nolische Gear Workspace\GearWatchDesigner\workspace\NolischeWatchFace.tpk" /opt/usr/home/owner/apps_rw/tmp/nolische_watch_face.tpk'
+sdb push "C:\development\gear\Tinzen Nolische Gear Workspace\GearWatchDesigner\workspace\NolischeWatchFace.tpk" /opt/usr/home/owner/apps_rw/tmp/nolische_watch_face.tpk
+
+sdb shell
+pkgcmd --install-file /opt/usr/home/owner/apps_rw/tmp/nolische_watch_face.tpk --no-verify
 ```
