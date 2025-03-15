@@ -1,4 +1,8 @@
 # galaxy_gear_s3
+
+ca certs: /var/lib/ca-certificates
+
+
 Galaxy Deploy Solution
 
 
