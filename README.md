@@ -46,6 +46,7 @@ sdb connect 192.168.0.46:26101
 
 sdb install "C:\development\gear\Tinzen Nolische Gear Workspace\GearWatchDesigner\workspace\NolischeWatchFace.tpk"
 
+sdb install "C:\Users\dave\GearWatchDesigner\workspace\com.samsung.srpol.snake3310-1.0.0.wgt"
 
 sdb install "C:\Users\dave\GearWatchDesigner\workspace\NolischeWatchFace_TW3.tpk"
 
